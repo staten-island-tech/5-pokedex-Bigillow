@@ -38,7 +38,19 @@
 
 
 
-j
+import json
+pokedex = open("./pokedex.json", encoding="utf8")
+x=810
+data = json.load(pokedex)
+poke_tpyes = input("What type?").lower().capitalize()
+for pokemon in data:
+    if poke_tpyes in pokemon['type']:
+        print(pokemon['name']['english'])
+        x -= 1
+    el
+
+    
+    
 
 
 
