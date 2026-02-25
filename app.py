@@ -38,23 +38,48 @@
 
 
 
-import json
-pokedex = open("./pokedex.json", encoding="utf8")
-x=810
-data = json.load(pokedex)
-poke_tpyes = input("What type?").lower().capitalize()
-for pokemon in data:
-    if poke_tpyes in pokemon['type']:
-        print(pokemon['name']['english'])
-        x -= 1
-    el
+# import json
+# pokedex = open("./pokedex.json", encoding="utf8")
+# x=809
+# data = json.load(pokedex)
+# poke_tpyes = input("What type?").lower().capitalize()
+# for pokemon in data:
+#     if poke_tpyes in pokemon['type']:
+#         print(pokemon['name']['english'])
+#     else:
+#         x -= 1
+#         if x == 0:
+#             print("No Pokemon was found of that type.")
 
     
-    
-
-
 
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 
+
+
+# import json
+# pokedex = open("./pokedex.json", encoding="utf8")
+# data = json.load(pokedex)
+# x = 809
+# poke_name = input("What name are you searching for?").lower().capitalize()
+# for pokemon in data:
+#     if poke_name in pokemon['name']['english']:
+#         print(pokemon['name']['english'])
+#     else:
+#         x -= 1
+#         if x == 0:
+#             print("No Pokemon was found.")
+
+
+
 #For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
 
+
+import json
+pokedex = open("./pokedex.json", encoding="utf8")
+data = json.load(pokedex)
+def pick():
+    for poke in data:
+        x = poke['name']['english']
+        print(x)
+pick()
