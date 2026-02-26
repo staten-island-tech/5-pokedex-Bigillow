@@ -77,9 +77,37 @@
 
 import json
 pokedex = open("./pokedex.json", encoding="utf8")
+moves = open("./moves.json", encoding="utf8")
 data = json.load(pokedex)
-def pick():
-    for poke in data:
-        x = poke['name']['english']
-        print(x)
-pick()
+data_moves = json.load(moves)
+pokemon_pick = input("What Pokemon's move set do you want to know?").lower().capitalize()
+poke_types = []
+x = 509
+for pokemon in data:
+    if pokemon_pick in pokemon['name']['english']:
+        for type in pokemon['type']:
+            poke_types.append(type)
+            print(poke_types)
+    else:
+        x -= 1
+        if x == 0:
+            print("No Pokemon was found.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
