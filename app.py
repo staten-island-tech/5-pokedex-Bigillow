@@ -92,6 +92,9 @@ for pokemon in data:
         x -= 1
         if x == 0:
             print("No Pokemon was found.")
+for move in data_moves:
+    for moves in data_moves[]:
+
 
 
 
