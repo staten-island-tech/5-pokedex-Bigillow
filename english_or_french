@@ -1,0 +1,15 @@
+def language(sentence):
+    words = [sentence.lower]
+    t = 0 
+    s = 0
+    for letter in words:
+        if letter == words:
+            t += 1
+        elif letter == words:
+            s +=1 
+    if t > s:
+        print("English")
+    elif s > t or t == s:
+        print("French")
+
+language("t t t t s ss s s s s s s s")
