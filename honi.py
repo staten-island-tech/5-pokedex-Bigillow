@@ -17,4 +17,4 @@ def honi(sentence):
             frequent += 1
     print(frequent)
 
-honi("fslkdjfspodifjsdofjhasdlkfjasdlkfjoasdlkfjsdlakfjnasldlfkjasdji")
+honi("mjbvejahbvav")
