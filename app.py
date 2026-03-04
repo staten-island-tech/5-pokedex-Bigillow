@@ -89,22 +89,14 @@ for pokemon in data:
         for type in pokemon['type']:
             poke_types.append(type)
             print(poke_types)
-    else:
-        x -= 1
-        if x == 0:
-            print("No Pokemon was found.")
-
-    
-print(poke_types)
-
-        
 
 
+for poke_type in poke_types:
+    for move in data_moves:
+        if poke_type in move['type']:
+            name.append(move['ename'])
 
-# for poke_type in poke_types:
-#     for move in data_moves['type']:
-#         if poke_type in data_moves['type']:
-#             name.append(data_moves['ename'])
+print(name)
 
 
 
